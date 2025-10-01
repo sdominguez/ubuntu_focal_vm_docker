@@ -91,12 +91,6 @@ docker compose down
 ### `docker: permission denied` con usuario `vagrant`
 - Ejecuta `newgrp docker` o cierra y abre sesión (o `vagrant ssh` de nuevo).
 
-### `bash^M` (saltos de línea de Windows)
-- Convierte el script a LF:
-  ```bash
-  sed -i -e 's/\r$//' script.sh
-  ```
-
 ### Re-provisionar sin recrear
 ```bash
 vagrant provision
